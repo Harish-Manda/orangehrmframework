@@ -1,10 +1,17 @@
 {
   "name": "orangehrmframework",
   "version": "1.0.0",
-  "description": "",
+  "description": "orangehrmframework with MCP configuration",
   "main": "index.js",
-  "scripts": {},
-  "keywords": [],
+  "scripts": {
+    "demo":"npx playwright test tests/demo/mytest.spec.ts --headed",
+    "login": "npx playwright test tests/functional/login.spec.ts --headed"
+  },
+  "keywords": [
+    "playwright",
+    "orangehrmframework",
+    "playwright-mcp"
+  ],
   "author": "",
   "license": "ISC",
   "type": "commonjs",
